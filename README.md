@@ -33,3 +33,58 @@ Detectar valores nulos y discutir cómo podrían ser tratados.
 Identificar outliers y evaluar su impacto potencial en el análisis.
 Resumen de Hallazgos:
 Resumir los principales hallazgos de cada EDA, destacando las características y desafíos únicos de cada conjunto de datos.
+Parte II: Preprocesamiento y Optimización
+
+Objetivo: Realizar el preprocesamiento de datos y la optimización de modelos de machine learning para el conjunto de datos seleccionado. La meta es elegir la técnica de machine learning más adecuada y optimizar sus hiperparámetros para obtener el mejor rendimiento posible.
+
+
+
+Instrucciones Detalladas
+
+Parte 1: Preprocesamiento de Datos
+
+Limpieza de Datos:
+Tratar los valores nulos utilizando técnicas adecuadas (imputación, eliminación, etc.).
+Manejar los outliers mediante técnicas de filtrado o transformación.
+Transformación de Columnas:
+Utilizar ColumnTransformer para aplicar transformaciones específicas a diferentes columnas.
+Realizar codificación de variables categóricas utilizando técnicas como One-Hot Encoding.
+Escalar las variables numéricas usando StandardScaler u otros métodos de normalización.
+Creación de Pipelines:
+Crear pipelines utilizando Pipeline de sklearn para automatizar el preprocesamiento de datos y asegurar la reproducibilidad.
+Incluir todos los pasos de preprocesamiento en el pipeline.
+
+
+Parte 2: Selección de Técnica de Machine Learning
+
+Entrenamiento Inicial:
+Entrenar múltiples modelos de machine learning (por ejemplo, Regresión Lineal, KNN, Árbol de Decisión, Random Forest, XGBoost, LGBM).
+Evaluar los modelos utilizando validación cruzada y seleccionar el modelo con el mejor rendimiento inicial.
+Comparación de Modelos:
+Comparar los modelos utilizando métricas de rendimiento relevantes (exactitud, precisión, recall, F1-Score, ROC-AUC, etc.).
+Seleccionar la técnica de machine learning más adecuada basándose en las métricas y la naturaleza del problema.
+
+
+Parte 3: Optimización de Hiperparámetros
+
+GridSearchCV:
+Implementar GridSearchCV para realizar una búsqueda exhaustiva de los mejores hiperparámetros para el modelo seleccionado.
+Definir el espacio de búsqueda para los hiperparámetros relevantes.
+RandomizedSearchCV:
+Implementar RandomizedSearchCV para realizar una búsqueda aleatoria de los mejores hiperparámetros, especialmente útil si el espacio de búsqueda es grande.
+Optuna:
+Implementar Optuna para una optimización avanzada de los hiperparámetros, aprovechando técnicas como la optimización bayesiana y el pruning.
+Evaluación de Modelos Optimizados:
+Entrenar el modelo con los mejores hiperparámetros encontrados y evaluar su rendimiento en el conjunto de prueba.
+Comparar el rendimiento del modelo optimizado con el modelo inicial.
+
+
+Parte 4: Documentación y Entrega
+
+Documentación del Proceso:
+Documentar todos los pasos del preprocesamiento, selección de técnica y optimización en un notebook de Jupyter.
+Incluir explicaciones detalladas y justificaciones para cada decisión tomada.
+Subida a GitHub:
+Actualizar el repositorio de GitHub con los notebooks de preprocesamiento, selección de técnica y optimización.
+Incluir los resultados de la optimización y la comparación de modelos.
+Crear un tag de liberación (v2.0.0) para esta versión del proyecto.
